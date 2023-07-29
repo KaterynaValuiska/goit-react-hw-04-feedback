@@ -1,0 +1,104 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #010101;
+  padding: 24px;
+}
+
+.containerBtn {
+  display: flex;
+  gap: 5px;
+}
+
+.btn:nth-child(3):hover {
+  background-color: red;
+  color: aliceblue;
+}
+.btn:nth-child(2):hover {
+  background-color: yellow;
+}
+
+.btn:nth-child(1):hover {
+  background-color: green;
+  color: aliceblue;
+}
+.btn {
+  padding: 8px;
+  font-weight: 600;
+  background-color: rgb(148, 207, 232);
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.containerStatistics {
+  display: flex;
+  gap: 10px;
+  font-weight: 600;
+}
+.statisticsGood {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  color: aliceblue;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+  width: 80px;
+  padding: 6px;
+  margin: 0;
+}
+
+.statisticsNeutral {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+  width: 80px;
+  padding: 6px;
+  margin: 0;
+}
+
+.statisticsBad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  color: aliceblue;
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+  width: 80px;
+  padding: 6px;
+  margin: 0;
+}
+
+.statisticsTotal {
+  width: 225px;
+  background-color: rgb(148, 207, 232);
+  border: 1px solid gray;
+  border-radius: 8px;
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  font-weight: 600;
+}
+
+.notification {
+  font-weight: 600;
+  color: orangered;
+}
+
+.total {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
