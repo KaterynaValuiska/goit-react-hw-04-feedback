@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
-const FeedbackOptions = ({ state, handleClickBtn }) => {
+const FeedbackOptions = ({ handleClickBtn, state }) => {
   return (
     <div className={css.containerBtn}>
       {state.map(name => (
@@ -17,7 +17,7 @@ const FeedbackOptions = ({ state, handleClickBtn }) => {
 };
 
 FeedbackOptions.propTypes = {
-  state: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
   handleClickBtn: PropTypes.func.isRequired,
+  state: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 };
 export default FeedbackOptions;
