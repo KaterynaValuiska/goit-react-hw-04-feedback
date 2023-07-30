@@ -1,6 +1,12 @@
 import PropTypes from 'prop-types';
 import css from './Feedback.module.css';
-import { BsCupHot, BsBalloonHeart } from 'react-icons/bs';
+import {
+  BsCupHot,
+  BsBalloonHeart,
+  BsEmojiSmile,
+  BsEmojiNeutral,
+  BsEmojiFrown,
+} from 'react-icons/bs';
 const Statistics = ({
   state,
   countTotalFeedback,
@@ -11,13 +17,16 @@ const Statistics = ({
       <h2> Statistics</h2>
       <div className={css.containerStatistics}>
         <p className={css.statisticsGood}>
-          Good <span>{state.good}</span>
+          Good <BsEmojiSmile />
+          <span>{state.good}</span>
         </p>
         <p className={css.statisticsNeutral}>
-          Neutral <span>{state.neutral}</span>
+          Neutral <BsEmojiNeutral />
+          <span>{state.neutral}</span>
         </p>
         <p className={css.statisticsBad}>
-          Bad <span>{state.bad}</span>
+          Bad <BsEmojiFrown />
+          <span>{state.bad}</span>
         </p>
       </div>
       <div className={css.total}>
